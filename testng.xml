@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite">
+
+<listeners>
+<listener class-name="com.comcast.hms.listenerutility.ListImPClassHMSP"></listener>
+</listeners>
+
+  <test thread-count="5" parallel="classes" name="Test">
+    <classes>
+      <class name="com.comcast.hms.SystemTest_TestNg.PatientMedicalHistoryTest"/>
+      <class name="com.comcast.hms.SystemTest_TestNg.PatientE2ETest"/>
+      <class name="com.comcast.hms.IntegrationTest_TestNG.ContactUsServicesIntegrationTest"/>
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest"/>
+      <class name="com.comcast.hms.SmokeTest_TestNG.ListOfDepartmentSmokeTest"/>
+      <class name="com.comcast.hms.SmokeTest_TestNG.AdminSearchPatientSmokeTest"/>
+      <class name="com.comcast.hms.SystemTest_TestNg.DoctorPatientE2ETest"/>
+      <class name="com.comcast.hms.SmokeTest_TestNG.LoginPageSMTest"/>
+      <class name="com.comcast.hms.SystemTest_TestNg.AdminDoctorE2ETest"/>
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest"/>
+      <class name="com.comcast.hms.SmokeTest_TestNG.PatientRegistrationSMTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
