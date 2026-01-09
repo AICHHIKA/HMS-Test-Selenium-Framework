@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.comcast.hms.SystemTest_TestNg.PatientE2ETest">
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest">
         <methods>
           <include name="ASMethod"/>
           <include name="AMMethod"/>
           <include name="BFMethod"/>
-          <include name="PatientE2E"/>
+          <include name="InformationIntegration"/>
           <include name="BMMethod"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.comcast.hms.SystemTest_TestNg.PatientE2ETest -->
+      </class> <!-- com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest -->
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest">
+        <methods>
+          <include name="ASMethod"/>
+          <include name="AMMethod"/>
+          <include name="AdminToContactUsQuery"/>
+          <include name="BFMethod"/>
+          <include name="BMMethod"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

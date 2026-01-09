@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <profiles>
-  	<profile>
+  <!--	<profile>
   		<id>FullRegressionTest</id>
   		
   		<build>
@@ -23,7 +23,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	</profile>
+	</profile>-->
   
   	<profile>
   		<id>SmokeTest</id>
@@ -45,7 +45,7 @@
 	</build>
 	</profile>
 	
-	<profile>
+	<!--<profile>
 		<id>RegionalRegressionTest</id>
 		
 		<build>
@@ -65,7 +65,7 @@
 	</build>
 	
 		
-	</profile>
+	</profile>-->
   	
   	
   </profiles>

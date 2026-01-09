@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="3" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-21T22:29:20 IST" name="Default suite" finished-at="2025-09-21T22:29:59 IST" duration-ms="39246">
+  <suite started-at="2026-01-09T16:20:29 IST" name="Suite" finished-at="2026-01-09T16:21:26 IST" duration-ms="57382">
     <groups>
     </groups>
-    <test started-at="2025-09-21T22:29:20 IST" name="Default test" finished-at="2025-09-21T22:29:59 IST" duration-ms="39246">
-      <class name="com.comcast.hms.SystemTest_TestNg.PatientE2ETest">
-        <test-method is-config="true" signature="BFMethod()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:20 IST" name="BFMethod" finished-at="2025-09-21T22:29:20 IST" duration-ms="9" status="PASS">
+    <test started-at="2026-01-09T16:20:29 IST" name="Test" finished-at="2026-01-09T16:21:26 IST" duration-ms="57382">
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest">
+        <test-method is-config="true" signature="BFMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:29 IST" name="BFMethod" finished-at="2026-01-09T16:20:29 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BFMethod -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:20 IST" name="launchBrowser" finished-at="2025-09-21T22:29:34 IST" duration-ms="14045" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:29 IST" name="launchBrowser" finished-at="2026-01-09T16:20:35 IST" duration-ms="6347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="PatientE2E()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:34 IST" name="PatientE2E" finished-at="2025-09-21T22:29:59 IST" duration-ms="24655" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="AdminToContactUsQuery()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:35 IST" name="AdminToContactUsQuery" finished-at="2026-01-09T16:20:50 IST" duration-ms="14825" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-primary pull-right" id="submit" name="submit">...</button> is not clickable at point (750, 516). Other element would receive the click: <img src="./assets/images/logo/Acoe.png" alt="" height="40px" width="350px" style="margin:auto">
-  (Session info: chrome=140.0.7339.186)
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=143.0.7499.170)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2c9ea419be10bc48c8e66fedade857f, clickElement {id=f.CED8D68C7BF09E78347B934E08C75194.d.D1E5C32B17B8991D61B5C7E4D9949039.e.30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56712/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a2c9ea419be10bc48c8e66fedade857f)] -> xpath: //button[@id="submit"]]
-Session ID: a2c9ea419be10bc48c8e66fedade857f]]>
+Command: [5beb0b21c102e6b770b1840e143696be, findElement {using=link text, value=Contact Us}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64746}, goog:processID: 15776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64746/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5beb0b21c102e6b770b1840e143696be]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-primary pull-right" id="submit" name="submit">...</button> is not clickable at point (750, 516). Other element would receive the click: <img src="./assets/images/logo/Acoe.png" alt="" height="40px" width="350px" style="margin:auto">
-  (Session info: chrome=140.0.7339.186)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=143.0.7499.170)
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2c9ea419be10bc48c8e66fedade857f, clickElement {id=f.CED8D68C7BF09E78347B934E08C75194.d.D1E5C32B17B8991D61B5C7E4D9949039.e.30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56712/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a2c9ea419be10bc48c8e66fedade857f)] -> xpath: //button[@id="submit"]]
-Session ID: a2c9ea419be10bc48c8e66fedade857f
+Command: [5beb0b21c102e6b770b1840e143696be, findElement {using=link text, value=Contact Us}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64746}, goog:processID: 15776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64746/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5beb0b21c102e6b770b1840e143696be
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -48,14 +48,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.comcast.hms.objectRepo_SYSTEM.PE2EPatientRegFirstPage.PatientCreationDetail(PE2EPatientRegFirstPage.java:130)
-at com.comcast.hms.SystemTest_TestNg.PatientE2ETest.PatientE2E(PatientE2ETest.java:47)
+at com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest.AdminToContactUsQuery(AdminToContactUsQueryIntTest.java:19)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -84,27 +84,122 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PatientE2E -->
-        <test-method is-config="true" signature="BMMethod()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:34 IST" name="BMMethod" finished-at="2025-09-21T22:29:34 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- AdminToContactUsQuery -->
+        <test-method is-config="true" signature="BMMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:35 IST" name="BMMethod" finished-at="2026-01-09T16:20:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BMMethod -->
-        <test-method is-config="true" signature="AMMethod()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:59 IST" name="AMMethod" finished-at="2025-09-21T22:29:59 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="AMMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:50 IST" name="AMMethod" finished-at="2026-01-09T16:20:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AMMethod -->
-        <test-method is-config="true" signature="ASMethod()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:59 IST" name="ASMethod" finished-at="2025-09-21T22:29:59 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="ASMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:50 IST" name="ASMethod" finished-at="2026-01-09T16:20:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ASMethod -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.hms.SystemTest_TestNg.PatientE2ETest@515c6049]" started-at="2025-09-21T22:29:59 IST" name="closeBrowser" finished-at="2025-09-21T22:29:59 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest@5fe94a96]" started-at="2026-01-09T16:20:50 IST" name="closeBrowser" finished-at="2026-01-09T16:20:52 IST" duration-ms="1689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.comcast.hms.SystemTest_TestNg.PatientE2ETest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.comcast.hms.IntegrationTest_TestNG.AdminToContactUsQueryIntTest -->
+      <class name="com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:20:52 IST" name="launchBrowser" finished-at="2026-01-09T16:20:57 IST" duration-ms="5438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="InformationIntegration()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:20:57 IST" name="InformationIntegration" finished-at="2026-01-09T16:21:26 IST" duration-ms="28920" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [93c855e2b98818e1aa1c508dd1fff50c, findElement {using=xpath, value=//div[@id='menu']//a[text()='Logins']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, goog:processID: 14124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93c855e2b98818e1aa1c508dd1fff50c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [93c855e2b98818e1aa1c508dd1fff50c, findElement {using=xpath, value=//div[@id='menu']//a[text()='Logins']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\AYEESI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, goog:processID: 14124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93c855e2b98818e1aa1c508dd1fff50c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest.InformationIntegration(AdminToAboutUsIntTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InformationIntegration -->
+        <test-method is-config="true" signature="BMMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:20:57 IST" name="BMMethod" finished-at="2026-01-09T16:20:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BMMethod -->
+        <test-method is-config="true" signature="AMMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:21:26 IST" name="AMMethod" finished-at="2026-01-09T16:21:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AMMethod -->
+        <test-method is-config="true" signature="ASMethod()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:21:26 IST" name="ASMethod" finished-at="2026-01-09T16:21:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ASMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest@411f53a0]" started-at="2026-01-09T16:21:26 IST" name="closeBrowser" finished-at="2026-01-09T16:21:26 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.comcast.hms.IntegrationTest_TestNG.AdminToAboutUsIntTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

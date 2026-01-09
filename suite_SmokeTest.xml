@@ -4,11 +4,10 @@
 
 <listeners>
 		<listener class-name="com.comcast.hms.listenerutility.ListImPClassHMSP.class"></listener>
-	</listeners>
+</listeners>
 	
   <test thread-count="5" name="Test">
- 
-    <classes>
+ <classes>
       <class name="com.comcast.hms.SmokeTest_TestNG.AdminSearchPatientSmokeTest"/>
       <class name="com.comcast.hms.SmokeTest_TestNG.ListOfDepartmentSmokeTest"/>
     </classes>
