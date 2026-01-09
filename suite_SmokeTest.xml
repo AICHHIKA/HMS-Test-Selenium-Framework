@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 <listeners>
-		<listener class-name="com.comcast.hms.listenerutility.ListImPClassHMSP.class"></listener>
+		<listener class-name="com.comcast.hms.listenerutility.ListImPClassHMSP"></listener>
 </listeners>
 	
   <test thread-count="5" name="Test">
